@@ -1,0 +1,15 @@
+@font-face {
+    font-family: ford;
+    src: url(/assets/fonts/fordantennawgl-regular-webfont.eot);
+    src: url(/assets/fonts/fordantennawgl-regular-webfont.eot?#iefix) format('embedded-opentype'),
+         url(/assets/fonts/fordantennawgl-regular-webfont.woff) format('woff'),
+         url(/assets/fonts/fordantennawgl-regular-webfont.ttf) format('truetype'),
+         url(/assets/fonts/fordantennawgl-regular-webfont.svg#ford_antenna_regularregular) format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+body {
+    font-family: ford, Arial, Verdana, Helvetica, sans-serif;
+}

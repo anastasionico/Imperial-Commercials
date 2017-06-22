@@ -1,0 +1,12 @@
+<perch:before>
+<ol class="breadcrumb" itemscope itemtype="http://schema.org/BreadcrumbList">
+</perch:before>
+  <li class="breadcrumb-item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+    <a itemprop="item" href="<perch:content id="link" type="text" label="Link" help="The URL that breadcrumb links to" />">
+      <span itemprop="name"><perch:content id="name" type="text" label="Name" help="The Name of the breadcrumb" /></span>
+    </a>
+    <span itemprop="position" content="<perch:content id="perch_item_index" type="hidden" />"></span>
+  </li>
+<perch:after>
+</ol>
+</perch:after>

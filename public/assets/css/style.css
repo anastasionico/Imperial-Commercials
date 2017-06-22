@@ -1,0 +1,1181 @@
+/*
+ * light blue: #00ABE6
+ * dark blue:  #004B80
+ */
+
+/* Small devices (tablets, 768px and up) 
+@media (min-width: @screen-sm-min) { ... }
+
+/* Medium devices (desktops, 992px and up) 
+@media (min-width: @screen-md-min) { ... }
+
+/* Large devices (large desktops, 1200px and up) 
+@media (min-width: @screen-lg-min) { ... }
+*/
+@media (min-width: 768px) 
+{ 
+}
+
+/* change the gutter width */
+.gutter-10.row {
+    margin-right: -5px;
+    margin-left: -5px;
+}
+.gutter-10 > [class^="col-"], .gutter-10 > [class^=" col-"] {
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+
+.height-100 {
+    position: absolute;
+    height: 100%;
+}
+.height-50 {
+    position: absolute;
+    height: 50%;
+}
+
+
+.img-centered {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+@font-face {
+    font-family: ford;
+    src: url(/assets/fonts/fordantennawgl-regular-webfont.eot);
+    src: url(/assets/fonts/fordantennawgl-regular-webfont.eot?#iefix) format('embedded-opentype'),
+         url(/assets/fonts/fordantennawgl-regular-webfont.woff) format('woff'),
+         url(/assets/fonts/fordantennawgl-regular-webfont.ttf) format('truetype'),
+         url(/assets/fonts/fordantennawgl-regular-webfont.svg#ford_antenna_regularregular) format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+
+/*http://stackoverflow.com/questions/10387740/five-equal-columns-in-twitter-bootstrap/22799354#22799354*/
+.col-xs-5ths,
+.col-sm-5ths,
+.col-md-5ths,
+.col-lg-5ths {
+    position: relative;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.col-xs-5ths {
+    width: 20%;
+    float: left;
+}
+
+@media (min-width: 768px) {
+    .col-sm-5ths {
+        width: 20%;
+        float: left;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-md-5ths {
+        width: 20%;
+        float: left;
+    }
+}
+
+@media (min-width: 1200px) {
+    .col-lg-5ths {
+        width: 20%;
+        float: left;
+    }
+}
+
+
+
+
+.btn-dark {
+    background-color: #004B80;
+    color: #FFF;
+}
+.btn.btn-dark.focus,
+.btn.btn-dark:focus,
+.btn.btn-dark:hover {
+    color: #FFF;
+}
+
+
+
+/* icon inside a form input */
+.left-inner-addon {
+    position: relative;
+}
+.left-inner-addon input {
+    padding-left: 30px;    
+}
+.left-inner-addon i {
+    position: absolute;
+}
+
+.right-inner-addon {
+    position: relative;
+}
+.right-inner-addon input {
+    padding-right: 30px;    
+}
+.right-inner-addon i {
+    position: absolute;
+    right: 0px;
+    padding: 10px 12px;
+    pointer-events: none;
+}
+
+
+.margin-bottom {
+    margin-bottom: 10px;
+}
+.inline-block {
+    display: inline-block;
+}
+
+
+
+#header {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#header #logo {
+    margin-left: 10px;
+    max-width: 174px;
+    width: 100%;
+}
+#header #logo-ford {
+    margin-left: 10px;
+    width: 100%;
+    max-width: 174px;
+    max-height: 70px;
+}
+
+.form-inline,
+.dealer-finder .form-inline {
+    margin-bottom: 10px;
+
+}
+#header .searchbar > input,
+.dealer-finder .searchbar > input {
+    padding-left: 30px;
+}
+#header .searchbar span.glyphicon,
+.dealer-finder .searchbar span.glyphicon {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    padding: 10px 12px;
+    pointer-events: none;
+}
+#header .form-inline,
+.dealer-finder .form-inline {
+    text-align: right;
+}
+
+
+
+.mobile-submenu,
+.mobile-submenu form {
+    margin-bottom: 10px;
+}
+.mobile-submenu .searchbar > input {
+    padding-left: 30px;
+}
+.mobile-submenu .searchbar span.glyphicon {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    padding: 10px 12px;
+    pointer-events: none;
+}
+.mobile-submenu .nav-coa .col {
+    float: left;
+    width: 50%;
+}
+.mobile-submenu .nav-coa .col.fullwidth {
+    width: 100%;
+}
+.mobile-submenu .nav-coa .col > a {
+    text-align: left;
+    display: block;
+    color: #FFF;
+    background-color: #004B80;
+    border: 1px solid #FFF;
+    border-radius: 4px;
+    padding-left: 10px;
+    padding-right: 26px;
+    text-align: center;
+    min-height: 48px;
+    padding-top: 13px;
+}
+.mobile-submenu .nav-coa .col > a > span {
+    margin-top: 2px;
+    float: left;
+}
+.mobile-submenu .nav-coa .col.fullwidth > a {
+    text-align: center;
+    display: block;
+}
+@media (max-width: 768px) {
+    .mobile-submenu .searchbar > input,
+    .mobile-submenu .searchbar .btn {
+        min-height: 48px;
+    }
+    .mobile-submenu .searchbar span.glyphicon {
+        top: 6px;
+    }
+    
+}
+
+
+
+.navbar {
+    margin-bottom: 0;
+    border: 0;
+    border-radius: 0;
+}
+@media (min-width: 768px) {
+    .navbar {
+        margin-bottom: 10px;
+    }
+}
+.navbar-default {
+    background-color: transparent;
+}
+.navbar-toggle {
+    width: 100%;
+    position: relative;
+    float: none;
+    padding: 9px 10px;
+    margin: 0 0 10px 0;
+    background-color: transparent;
+    background-image: none;
+    border: none;
+    border-radius: 4px;
+}
+.navbar-default .navbar-toggle,
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+    background-color: #004B80;
+    color: #FFF;
+}
+.navbar-default .navbar-toggle .bars {
+    position: absolute;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #00ABE6;
+    height: 3px;
+}
+@media (min-width: 768px) {
+    /* will probs be used for mobile use, until break*/
+    .navbar-default .navbar-nav>li>a {
+        color: #FFF;
+        font-weight: bold;
+        background-color: #004B80;
+    }
+    .navbar-default .navbar-nav>.active>a,
+    .navbar-default .navbar-nav>.active>a:focus,
+    .navbar-default .navbar-nav>.active>a:hover {
+        color: #FFF;
+        background-color: #00ABE6;
+    }
+
+    /*some unsure if needed on mobile */
+    .navbar-default {
+        background: none;
+    }
+
+    .navbar .nav {
+        margin: 0;
+        display: block;
+        width: 100%;
+    }
+    .navbar-collapse {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .navbar .nav li {
+        display: table-cell;
+        width: 1%;
+        float: none;
+        margin-left: 1px;
+        margin-right: 1px;
+    }
+
+    .navbar .nav li a {
+        text-align: center;
+    }
+    .navbar-default .navbar-nav>li>a {
+        padding: 5px 5px;
+    }
+
+    /* aftermarket fix*/
+    .navbar .nav li {
+        min-height: 50px;
+        vertical-align: middle;
+    }
+    .navbar .nav li a {
+        height: 50px;
+        margin: auto;
+    }
+}
+@media (min-width: 992px) {
+    .navbar {
+        min-height: 30px;
+    }
+    /* aftermarket fix*/
+    .navbar .nav li {
+        min-height: 30px;
+    }
+    .navbar .nav li a {
+        height: 30px;
+    }
+}
+
+
+
+.carousel-control>img {
+    position: absolute;
+    top: 50%;
+    z-index: 5;
+    display: inline-block;
+    width: 36px;
+    height: 64px;
+    margin-top: -32px;
+}
+.carousel-control.left,
+.carousel-control.right {
+    background: none;
+}
+.carousel-indicators li {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin: 1px;
+    background-color: #EEE;
+    border: 2px solid #00ABE6;
+    border-radius: 10px;
+}
+.carousel-indicators .active {
+    background-color: #00ABE6;
+    width: 15px;
+    height: 15px;
+    margin: 0;
+}
+
+
+
+.nav-manufacturer > li > a {
+    padding: 5px 5px;
+    color: #FFF;
+    background-color: #00ABE6;
+}
+.nav-manufacturer .tooltip .tooltip-inner {
+    background-color: #f2f2f2;
+}
+.nav-manufacturer .tooltip .tooltip-arrow {
+    border-bottom-color: #f2f2f2;
+}
+
+
+.van-manufacturer a.text-center img { display: block; width: 100%; margin: auto; }
+
+
+.tile {
+    padding: 5px;
+    margin-bottom: 10px;
+    position: relative;
+}
+.tile.tile-grey {
+    background-color: #f2f2f2;
+}
+.tile.tile-ford-vans {
+    background: #ced7d9;
+    background: -moz-linear-gradient(left, #ced7d9 0%, #f2f4f5 51%, #ced7d9 100%);
+    background: -webkit-linear-gradient(left, #ced7d9 0%,#f2f4f5 51%,#ced7d9 100%);
+    background: linear-gradient(to right, #ced7d9 0%,#f2f4f5 51%,#ced7d9 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ced7d9', endColorstr='#ced7d9',GradientType=1 );
+}
+.tile.tile-padded {
+    padding: 20px;
+}
+.tile.tile-bordered {
+    border: 5px solid #f2f2f2;
+    padding: 0px;
+}
+.tile-image > a > img {
+    display: block;
+}
+.tile-image > a > h2,
+.tile-image > a > h3 {
+    position: absolute;
+    z-index: 5;
+    margin: 0;
+    padding: 30px 0 10px 20px;
+    font-size: 40px;
+}
+.tile-image .anotation {
+    position: absolute;
+    left: 22px;
+    top: 72px;
+}
+.tile.tile-mb {
+    margin-bottom: 20px;
+}
+
+.tile-icon {
+    min-height: 160px;
+}
+.tile-image > a,
+.tile-icon > a {
+    display: block;
+}
+.tile-icon > a {
+    color: #000;
+}
+.tile-icon > a:focus,
+.tile-icon > a:hover {
+    text-decoration: none;
+}
+.tile-icon > a > h2,
+.tile-icon > a > h3 {
+    margin: 0;
+    padding: 30px 0 10px 20px;
+    font-size: 40px;
+    z-index: 5;
+}
+.tile-icon > a > img {
+    display: block;
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    width: 96px;
+    height: 96px;
+}
+.tile-icon .anotation {
+    position: absolute;
+    left: 22px;
+    margin-top: -13px;
+}
+
+.tile-image .styleline,
+.tile-icon .styleline {
+    position: absolute;
+    z-index: 5;
+    top: 30px;
+    left: 10px;
+    height: 50px;
+    width: 3px;
+    background-color: #000;
+}
+/* some fixed heights as dynamic percent heights are orrible */
+@media (min-width: 992px) 
+{
+    .tile-icon .anotation > span,
+    .tile-image .anotation > span {
+        display: block;
+        max-height: 0;
+        overflow: hidden;
+       	/* Set our transitions up. */
+        -webkit-transition: max-height 0.8s;
+        -moz-transition: max-height 0.8s;
+        transition: max-height 0.8s;
+    }
+    .tile-icon > a:hover .anotation > span,
+    .tile-icon > a:focus .anotation > span,
+    .tile-image > a:hover .anotation > span,
+    .tile-image > a:focus .anotation > span {
+        display: block;
+        max-height: 20px;
+    }
+
+    .tile-icon > a > img {
+       	/* Set our transitions up. */
+        -webkit-transition: height 0.8s ease, width 0.8s ease;
+        -moz-transition: height 0.8s ease, width 0.8s ease;
+        transition: height 0.8s ease, width 0.8s ease;
+    }
+    .tile-icon > a:hover > img,
+    .tile-icon > a:focus > img {
+        width: 90px;
+        height: 90px;
+    }
+
+}
+@media (min-width: 1200px) 
+{ 
+    .tile-image {
+        height: 360px;
+        max-height: 360px;
+        overflow-y: hidden;
+    }
+    .tile-icon {
+        height: 175px;
+    }
+    .tile-icon > a {
+        height: 165px;
+    }
+}
+
+.newTableDesign {
+    margin: 1em auto; 
+    border-spacing: 10px; 
+    border-collapse: separate;    
+    padding: 1em;
+    color: #35a;
+    border:0px; 
+}
+.newTableDesign tr:first-child > td {background-color: #35a; color: #fff;}
+.newTableDesign tr:nth-child(2n+3) > td {background: #ddd}
+.newTableDesign tr > td {background: #eee}
+.newTableDesign td                  {padding: 0.3em 2em; text-align: justify;border:0px; }
+.used-sidebar {
+    border: 5px solid #f2f2f2;
+    padding: 5px;
+    margin-bottom: 10px;
+    background-color: #00ABE6;
+    color: #FFF;
+}
+
+.used-vehicle-small {
+    background-color: #337ab7;
+    color: #FFF;   
+}
+.used-vehicle-small a{
+    color: #FFF;   
+}
+.used-vehicle {
+    padding: 5px;
+    margin-bottom: 10px;
+}
+.used-vehicle h1,
+.used-vehicle h2,
+.used-vehicle h3 {
+    margin: 0 0 10px 0;
+    font-size: 20px;
+}
+.used-vehicle h4 {
+    color: #FFF;
+}
+.used-vehicle .used-vehicle-image {
+    display: block;
+    position: relative;
+}
+.used-vehicle img.thumbnail {
+    max-height: 80px;
+    display: inline-block;
+}
+.used-vehicle .used-vehicle-image .count {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 2px 10px;
+    z-index: 5;
+    color: #FFF;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, .6);
+}
+.used-vehicle a.thumbnail {
+    position: relative;
+}
+.used-vehicle a.thumbnail .new-banner,
+.used-vehicle .used-vehicle-image .new-banner {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    z-index: 98;
+    width: 100px;
+    height: 100px;
+    background: url(/assets/img/used-new-banner.png) no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.used-vehicle .image-main {
+    display: block;
+    margin-bottom: 10px;
+
+}
+.used-vehicle .contact_prominent {
+    font-size: 17px;
+}
+.used-vehicle .price {
+    height: 100%;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+.used-vehicle .btn-dark {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+@media (min-width: 992px) {
+    .border-left{
+        border-left: 2px solid #004B80;
+    }
+
+    
+    .used-vehicle .contact_prominent {
+        padding-left: 10px;
+        border-left: 2px solid #004B80;
+    }
+    .used-vehicle.used-vehicle-small .price {
+        border-left: none;
+        margin-bottom: 10px;
+    }
+}
+
+
+
+.nav-coa .col {
+    float: left;
+    width: 20%;
+    margin: 0;
+    padding: 0;
+}
+.nav-coa .col.col3 {
+    float: left;
+    width: 33.33%;
+    margin: 0;
+    padding: 0;
+}
+.nav-coa .col > a {
+    text-align: center;
+    display: block;
+    color: #000;
+    border: 1px solid #FFF;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: bold;
+    position: relative;
+}
+.nav-coa .col > a:focus,
+.nav-coa .col > a:hover {
+    text-decoration: none;
+    color: #00ABE6;
+}
+.nav-coa.nav-coa-blue .col > a {
+    color: #FFF;
+    background-color: #004B80;
+}
+.btn-block > .icon,
+.nav-coa .col > a > .icon {
+    margin-right: 6px;
+    margin-bottom: -3px;
+}
+#header .nav-coa .col > a > .icon {
+    display: inline-block;
+}
+@media (min-width: 768px) {
+    #header .nav-coa .col {
+        max-width: 126px;
+        float: right;
+    }
+}
+
+
+.icon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-size: 16px;
+}
+.icon-phone-light {
+    background-image: url(/assets/img/icon-phone-light.png);
+}
+.icon-phone-dark {
+    background-image: url(/assets/img/icon-phone-dark.png);
+}
+.icon-location-light {
+    background-image: url(/assets/img/icon-location-light.png);
+}
+.icon-location-dark {
+    background-image: url(/assets/img/icon-location-dark.png);
+}
+.icon-email-dark {
+    background-image: url(/assets/img/icon-email-dark.png);
+}
+.icon-email-light {
+    background-image: url(/assets/img/icon-email-light.png);
+}
+.icon-drive-dark {
+    background-image: url(/assets/img/icon-drive-dark.png);
+}
+.icon-drive-light {
+    background-image: url(/assets/img/icon-drive-light.png);
+}
+.icon-truck-dark {
+    background-image: url(/assets/img/icon-truck-dark.png);
+}
+.icon-truck-light {
+    background-image: url(/assets/img/icon-truck-light.png);
+}
+
+
+
+#footer .menu-container {
+    margin-left: -5px;
+    margin-right: -5px;
+}
+#footer .menu {
+    float: left;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+#footer .menu ul {
+    margin: 0;
+    padding: 0;
+    padding-top: 10px;
+    list-style: none;
+    border-top: 2px solid #004B80;
+}
+#footer .copyright {
+    position: relative;
+}
+#footer .copyright > img {
+    float: right;
+}
+#footer .copyright .spiel {
+    position: absolute;
+    width: 340px;
+    top: 0;
+    right: 0;
+    color: #FFF;
+    font-size: 11px;
+    padding: 100px 30px 50px 100px;
+    z-index: 5;
+}
+#footer .legal-wording {
+    margin-top: 15px;
+    font-size: 11px;
+}
+@media (min-width: 992px) 
+{
+    #footer .menu ul {
+        min-width: 150px;
+    }
+    #footer .copyright .spiel {
+        width: 100%;
+        padding: 50px 10px 10px 50px;
+    }
+}
+@media (min-width: 1200px) 
+{ 
+    #footer .copyright .spiel {
+        width: 100%;
+        padding: 70px 10px 10px 50px;
+    }
+}
+
+/*
+ * ford styling
+ */
+.tile-pryamid {
+    position: relative;
+}
+.tile-pyramid:after,
+.tile-pyramid:before {
+    content: " ";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: auto;
+    z-index: 101;
+
+    margin-left: -840px;
+    border-left: 840px solid transparent;
+    border-right: 840px solid transparent;
+    left: 50%;
+
+    display: table;
+    content: "";
+    line-height: 0;
+}
+.tile-pyramid:after {
+    bottom: 0;
+    border-bottom: 30px solid #fff;
+}
+.tile-pyramid:before {
+    top: 0;
+    border-top: 30px solid #fff;
+}
+
+
+.video-black-wrapper {
+    max-height: 347px;
+    background-color: #000;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.ford .carousel-indicators li {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin: 1px;
+    background-color: #EEE;
+    border: none;
+    border-radius: 10px;
+}
+.ford .carousel-indicators .active {
+    background-color: #FFF;
+    width: 15px;
+    height: 15px;
+    margin: 0;
+}
+
+
+.tile-ford-vans .van {
+    text-align: center;
+}
+.tile-ford-vans h1,
+.tile-ford-vans h2,
+.tile-ford-vans h3 {
+    padding: 0;
+    margin: 0;
+}
+
+
+.btn-ford {
+    color: #FFF;
+    text-transform: uppercase;
+    background-color: #91A4B0;
+    border: none;
+    border-radius: 0;
+}
+.btn-ford.focus,
+.btn-ford:focus,
+.btn-ford:hover,
+.btn-ford.active,
+.btn-ford:active {
+    color: #FFF;
+    background-color: #45A4D3;
+}
+.btn-ford-two {
+    color: #FFF;
+    text-transform: uppercase;
+    background-color: #2c97cb;
+    border: none;
+    border-radius: 0;
+}
+.btn-ford-two.focus,
+.btn-ford-two:focus,
+.btn-ford-two:hover,
+.btn-ford-two.active,
+.btn-ford-two:active {
+    color: #FFF;
+    background-color: #003896;
+}
+
+
+.ford .banner,
+.ford .banner .subheading {
+    margin-bottom: 20px;
+}
+@media (min-width: 768px) 
+{ 
+    .ford .banner {
+        position: relative;
+    }
+    .ford .banner .caption {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        z-index: 5;
+    }
+    .ford .banner .btn-wrap {
+        max-width: 200px;
+    }
+}
+
+
+
+.tab-content {
+    border-right: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+.tab-content .tab-pane {
+    padding: 15px;
+}
+
+
+.ford .highlighted {
+    color: #FFF;
+    background-color: #003896;
+    padding: 10px;
+    line-height: 1.7em;
+}
+
+.ford .advert {
+    text-align: center;
+}
+
+.ford .transit-link {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.ford .transit-link .bottom {
+    display: block;
+    background-color: #3F5969;
+    color: #FFF;
+    padding: 5px 10px;
+}
+
+
+
+.ford-menu {
+    overflow: hidden;
+    position: fixed;
+    right: 0;
+    top: 20%;
+    z-index: 2000
+}
+.collapse, .header-container, .header-container .container {
+    position: relative
+}
+.ford-menu .sidebar-tab {
+    display: block;
+    float: right;
+    clear: right;
+    padding-top: 1px;
+    width: 55px
+}
+.is-visible.ford-menu .sidebar-tab {
+    width: 140px;
+    margin-left: 0
+}
+.ford-menu .sidebar-tab .menubtn {
+    display: block;
+    text-align: left;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 0;
+    border-radius: 0;
+    color: #fff;
+    margin: 0;
+    width: 140px;
+    padding: 10px;
+    height: 50px;
+    font-family: ford, Arial, Verdana, Helvetica, sans-serif;
+    background-color: #425968;
+    font-size: 12px;
+    vertical-align: middle;
+    line-height: 37px;
+    position: relative;
+}
+.ford-menu .sidebar-tab .menubtn span {
+    width: 70px;
+}
+.ford-menu .menubtn > a,
+.ford-menu .menubtn > span {
+    line-height: 15px;
+    vertical-align: middle;
+    display: inline-block
+}
+.ford-menu .menubtn:focus,
+.ford-menu .menubtn:hover {
+    color: #fff;
+    box-shadow: none;
+    outline: 0;
+    background-color: #3da9df;
+    border-color: #fff
+}
+.ford-menu .menubtn span {
+    top: -5px;
+    padding: 0
+}
+.ford-menu .menubtn > span {
+    padding: 3px 0;
+    position: absolute;
+      left: 59px;
+        top: 5px;
+}
+.ford-menu .sidebar-tab .menubtn .icon {
+    margin-left: 7px;
+    margin-right: 10px;
+    background: url(/assets/img/custom-sidebar-sprite-icons.png);
+    height: 30px;
+    width: 25px;
+    display: inline-block
+}
+.ford-menu .sidebar-tab.chat:hover, .ford-menu .sidebar-tab.enquiry:hover,
+.ford-menu .sidebar-tab.locations.hovered-over, .ford-menu .sidebar-tab.locations:hover,
+.ford-menu .sidebar-tab.parts:hover, .ford-menu .sidebar-tab.service:hover,
+.ford-menu .sidebar-tab.valuation:hover {
+    margin-left: 0;
+    width: 140px
+}
+.ford-menu .sidebar-tab.service .menubtn .icon {
+    background-position: 0 0
+}
+.ford-menu .sidebar-tab.parts .menubtn .icon {
+    background-position: -50px 0
+}
+.ford-menu .sidebar-tab.valuation .menubtn .icon {
+    background-position: -99px 3px
+}
+.ford-menu .sidebar-tab.enquiry .menubtn .icon {
+    background-position: -150px 3px
+}
+.ford-menu .sidebar-tab.locations .menubtn .icon {
+    background-position: -196px 0
+}
+.ford-menu .sidebar-tab.chat .menubtn {
+    background-color: #00a2e1
+}
+.ford-menu .sidebar-tab.chat .icon {
+    margin-right: 14px;
+    background-position: -250px 6px
+}
+
+
+
+/* Page - main page with white bg */
+.page {
+    background-color: #FFF;
+    padding: 9px 10px 20px;
+}
+.page a,
+.page a:visited {
+    color: #036;
+}
+.page a:focus,
+.page a:hover {
+    color: #00ADEF;
+}
+.page h1,
+.page h2,
+.page h3,
+.page h4,
+.page h5 {
+}
+/* Page - Image left/right */
+.page-image-left,
+.page-image-right {
+    background-color: #FFF;
+    font-size: 14px;
+    line-height: 22px;
+    padding-top: 0;
+    padding-bottom: 50px;
+}
+.page-image-left h3,
+.page-image-right h3 {
+    display: block;
+    line-height: 34px;
+    font-size: 32px;
+    padding-top: 22px;
+    margin-top: 0;
+    margin-bottom: 32px;
+}
+.page-image-left h3:before,
+.page-image-right h3:before {
+    display: block;
+    position: relative;
+    top: -22px;
+    content: '';
+    height: 4px;
+    width: 55px;
+    background-color: #000;
+}
+.page-image-left .text,
+.page-image-right .text {
+}
+.page-image-left .text {
+    padding-right: 20px;
+}
+.page-image-right .text {
+    padding-left: 20px;
+}
+.page-image-left > div > img.img-responsive {
+    padding-left: 0;
+}
+.page-image-right > div > img.img-responsive {
+    padding-right: 0;
+}
+
+
+
+/* Blog */
+ul.hfeed.listing {
+    list-style: none;
+    padding: 0;
+}
+li.hentry {
+    margin-bottom: 20px;
+}
+li.hentry h2 {
+    margin-top: 0;
+}
+/* Blog on index */
+ul.post-in-menu p {
+    display: inline;
+}
+ul.post-in-menu li.hentry {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    border-bottom: 1px solid #eee; 
+}
+.index-news {
+    position: relative;
+}
+.index-news hr {
+    margin-top: 5px;
+    margin-bottom: 0;
+
+}
+.index-news > a {
+    position: absolute;
+    top: 13px;
+    right: 0;
+}
+.index-news {
+    font-size: 11px;
+
+}
+.index-news span.date {
+    display: inline-block;
+    background-color: #337ab7;
+    color: white;
+    padding: 1px 5px 1px 5px;
+    margin-right: 3px;
+}
+
+
+
+.ford-options h1,
+.ford-options h2,
+.ford-options h3 {
+    text-align: center;
+
+}
+.ford-options .ford-option a.bottom {
+    display: block;
+    text-align: center;
+    margin-top: 5px;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+h1.homepage {
+    font-size: 14px;
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 0;
+    line-height: 20px;
+}

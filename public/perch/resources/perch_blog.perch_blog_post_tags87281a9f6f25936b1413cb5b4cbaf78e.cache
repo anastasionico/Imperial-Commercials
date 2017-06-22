@@ -1,0 +1,10 @@
+
+<h3>Tags</h3>
+<ul>
+
+    <li><a href="archive.php?tag=gareth-kaye" rel="tag">Gareth Kaye</a></li>
+
+    <li><a href="archive.php?tag=winner" rel="tag">winner</a></li>
+
+    <li><a href="archive.php?tag=fifteen-to-one" rel="tag">Fifteen to One</a></li>
+</ul>

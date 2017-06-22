@@ -1,0 +1,10 @@
+
+<h3>Tags</h3>
+<ul>
+
+    <li><a href="archive.php?tag=vw" rel="tag">VW</a></li>
+
+    <li><a href="archive.php?tag=stoke" rel="tag">Stoke</a></li>
+
+    <li><a href="archive.php?tag=van-centre" rel="tag">Van Centre</a></li>
+</ul>

@@ -1,0 +1,10 @@
+
+<h3>Tags</h3>
+<ul>
+
+    <li><a href="archive.php?tag=poppies" rel="tag">Poppies</a></li>
+
+    <li><a href="archive.php?tag=daf-trucks" rel="tag">DAF Trucks</a></li>
+
+    <li><a href="archive.php?tag=hull" rel="tag">Hull</a></li>
+</ul>

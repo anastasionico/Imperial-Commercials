@@ -1,0 +1,193 @@
+<perch:blocks>
+
+<perch:block label="Full Page Block" type="full_page">
+<div class="page">
+  <perch:content id="content_full" type="textarea" label="Content" editor="ckeditor" html="true" required="true" bucket="cke" />
+</div>
+</perch:block>
+
+<perch:block label="Image Left Block" type="image_left_block">
+<div class="row page-image-left">
+  <div class="col-md-7">
+    <img src="<perch:content id="image_left" type="image" label="Image" required="true" />" class="img-responsive img-centered">
+  </div>
+  <div class="col-md-5 text">
+    <h3><perch:content id="header_left" type="text" label="Header" required="true" /></h3>
+    <perch:content id="content_left" type="textarea" label="Content" editor="ckeditor" html="true" required="true" />
+  </div>
+  <div class="clearfix"></div>
+</div>
+</perch:block>
+
+<perch:block label="Image Right Block" type="image_right_block">
+<div class="row page-image-right">
+  <div class="col-md-5 text">
+    <h3><perch:content id="header_right" type="text" label="Header" required="true" /></h3>
+    <perch:content id="content_right" type="textarea" label="Content" editor="ckeditor" html="true" required="true" />
+  </div>
+  <div class="col-md-7">
+    <img src="<perch:content id="image_right" type="image" label="Image" required="true" />" class="img-responsive img-centered">
+  </div>
+  <div class="clearfix"></div>
+</div>
+</perch:block>
+
+<perch:block label="Full Image Block" type="image_full">
+<div class="page-image-full">
+  <img src="<perch:content id="image_full" type="image" label="Image" required="true" />" class="img-responsive img-centered">
+</div>
+</perch:block>
+
+<perch:block label="Full Image Block Linked" type="image_full_link">
+<div class="page-image-full-link">
+  <a href="<perch:content id="link" type="text" label="Link" help="The URL that the image links to" />">
+    <img src="<perch:content id="image_full" type="image" label="Image" required="true" />" class="img-responsive img-centered">
+  </a>
+</div>
+</perch:block>
+
+<perch:block label="Ford Options Grey" type="ford_options_grey">
+<div class="tile tile-grey tile-padded tile-mb ford-options">
+  <h1><perch:content id="header" type="text" label="Header" /></h1>
+  <div class="row">
+    <perch:repeater id="option-item" label="Option Item">
+    <div class="col-md-3 ford-option">
+      <a href="<perch:content id="link" type="text" label="Link" help="The URL that the image/button links to" />">
+        <img src="<perch:content id="image" type="image" label="Image" />" class="img-responsive">
+      </a>
+      <a href="<perch:content id="link" type="text" label="Link" help="The URL that the image/button links to" />" class="bottom">
+        <perch:content id="title" type="text" label="Title" /><br>
+        <perch:content id="title_line_2" type="text" label="Title Line 2" />
+      </a>
+    </div>
+    </perch:repeater>
+  </div>
+</div><!--/.tile -->
+</perch:block>
+
+<perch:block label="Ford Options White" type="ford_options_white">
+<div class="tile tile-padded tile-mb ford-options">
+  <h1><perch:content id="header" type="text" label="Header" /></h1>
+  <div class="row">
+    <perch:repeater id="option-item" label="Option Item">
+    <div class="col-md-3 ford-option">
+      <a href="<perch:content id="link" type="text" label="Link" help="The URL that the image/button links to" />">
+        <img src="<perch:content id="image" type="image" label="Image" />" class="img-responsive">
+      </a>
+      <a href="<perch:content id="link" type="text" label="Link" help="The URL that the image/button links to" />" class="bottom">
+        <perch:content id="title" type="text" label="Title" />
+      </a>
+    </div>
+    </perch:repeater>
+  </div>
+</div><!--/.tile -->
+</perch:block>
+
+<perch:block label="Ford Advert With Buttons" type="ford_advert_with_buttons">
+<div class="row gutter-10">
+  <div class="col-md-12">
+    <div class="banner">
+      <img src="<perch:content id="advert_image" type="image" label="Image" required="true" />" class="img-responsive img-centered">
+      <div class="caption">
+        <h1><span class="highlighted"><perch:content id="advert_header" type="text" label="Header" required="true" /></span></h1>
+        <div class="subheading"><span class="highlighted"><perch:content id="advert_subheader" type="text" label="Sub Header" required="true" /></span></div>
+        <div class="btn-wrap">
+          <perch:content type="checkbox" id="advert_btn_enquire_now" value="1" label="Enquire Now Button" suppress="true" />
+          <perch:if exists="advert_btn_enquire_now">
+            <a href="#" class="btn btn-ford-two btn-block" data-toggle="modal" data-target="#modal-enquiry">Enquire Now</a>
+          </perch:if>
+          <perch:content type="checkbox" id="advert_btn_call_back" value="1" label="Call Back Button" suppress="true" />
+          <perch:if exists="advert_btn_call_back">
+            <a href="#" class="btn btn-ford-two btn-block" data-toggle="modal" data-target="#modal-callme">Call Back</a>
+          </perch:if>
+          <perch:content type="checkbox" id="advert_btn_part_ex" value="1" label="Part Exchange Button" suppress="true" />
+          <perch:if exists="advert_btn_part_ex">
+            <a href="#" class="btn btn-ford-two btn-block" data-toggle="modal" data-target="#modal-part_exchange">Part Exchange</a>
+          </perch:if>
+          <perch:content type="checkbox" id="advert_btn_book_test_drive" value="1" label="Book Test Drive Button" suppress="true" />
+          <perch:if exists="advert_btn_book_test_drive">
+            <a href="#" class="btn btn-ford-two btn-block" data-toggle="modal" data-target="#modal-test_drive">Book a test drive</a>
+          </perch:if>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</perch:block>
+
+<perch:block label="Ford Vehicle Model with tabs" type="ford_vehicle_model_with_tabs">
+<div class="row">
+  <div class="col-md-12">
+    <hr>
+    <h3><perch:content id="vehicle_heading" type="text" label="Vehicle Heading" required="true" /></h3>
+
+    
+  </div>
+  <div class="col-md-4" data-selected="<perch:content id="open_tab" type="select" label="Open Tab" options="overview, cash, pcp, hp, lease, contract_hire" allowempty="false" required="true" />">
+
+    <img src="<perch:content id="vehicle_image" type="image" label="Vehicle Image" required="true" />" class="img-responsive">
+
+    <perch:content type="checkbox" id="btn_enquire_now" value="1" label="Enquire Now Button" suppress="true" />
+    <perch:if exists="btn_enquire_now">
+      <a href="#" class="btn btn-ford-two btn-block" data-toggle="modal" data-target="#modal-enquiry">Enquire Now</a>
+    </perch:if>
+    <perch:content type="checkbox" id="btn_call_back" value="1" label="Call Back Button" suppress="true" />
+    <perch:if exists="btn_call_back">
+      <a href="#" class="btn btn-ford-two btn-block" data-toggle="modal" data-target="#modal-callme">Call Back</a>
+    </perch:if>
+    <perch:content type="checkbox" id="btn_part_ex" value="1" label="Part Exchange Button" suppress="true" />
+    <perch:if exists="btn_part_ex">
+      <a href="#" class="btn btn-ford-two btn-block" data-toggle="modal" data-target="#modal-part_exchange">Part Exchange</a>
+    </perch:if>
+    <perch:content type="checkbox" id="btn_book_test_drive" value="1" label="Book Test Drive Button" suppress="true" />
+    <perch:if exists="btn_book_test_drive">
+      <a href="#" class="btn btn-ford-two btn-block" data-toggle="modal" data-target="#modal-test_drive">Book a test drive</a>
+    </perch:if>
+
+    <perch:repeater id="link-item" label="Link Item Button">
+      <a href="<perch:content id="link" type="text" label="URL" />" class="btn btn-ford-two btn-block"><perch:content id="title" type="text" label="Title" /></a></li>
+    </perch:repeater>
+  </div>
+  <div class="col-md-8">
+    <div>
+      <!-- Nav tabs -->
+      <ul class="nav nav-tabs" role="tablist">
+        <li role="presentation"<perch:if id="open_tab" value="overview" match="eq"> class="active"</perch:if>><a href="#overview<perch:content id="perch_item_index" type="hidden" />" aria-controls="overview" role="tab" data-toggle="tab">Overview</a></li>
+        <li role="presentation"<perch:if id="open_tab" value="cash" match="eq"> class="active"</perch:if>><a href="#cash<perch:content id="perch_item_index" type="hidden" />" aria-controls="cash" role="tab" data-toggle="tab">Cash Price</a></li>
+        <li role="presentation"<perch:if id="open_tab" value="pcp" match="eq"> class="active"</perch:if>><a href="#pcp<perch:content id="perch_item_index" type="hidden" />" aria-controls="pcp" role="tab" data-toggle="tab">PCP</a></li>
+        <li role="presentation"<perch:if id="open_tab" value="hp" match="eq"> class="active"</perch:if>><a href="#hp<perch:content id="perch_item_index" type="hidden" />" aria-controls="hp" role="tab" data-toggle="tab">HP</a></li>
+        <li role="presentation"<perch:if id="open_tab" value="lease" match="eq"> class="active"</perch:if>><a href="#lease<perch:content id="perch_item_index" type="hidden" />" aria-controls="lease" role="tab" data-toggle="tab">Lease</a></li>
+        
+        <li role="presentation"<perch:if id="open_tab" value="contract_hire" match="eq"> class="active"</perch:if>><a href="#contract_hire<perch:content id="perch_item_index" type="hidden" />" aria-controls="contract_hire" role="tab" data-toggle="tab">Contract Hire</a></li>
+      </ul>
+      <!-- Tab panes -->
+      <div class="tab-content">
+        <div role="tabpanel" class="tab-pane<perch:if id="open_tab" value="overview" match="eq"> active</perch:if>" id="overview<perch:content id="perch_item_index" type="hidden" />">
+          <perch:content id="overview_tabcontent" type="textarea" label="Overview Tab Content" editor="ckeditor" html="true" required="true" />
+        </div>
+        <div role="tabpanel" class="tab-pane<perch:if id="open_tab" value="cash" match="eq"> active</perch:if>" id="cash<perch:content id="perch_item_index" type="hidden" />">
+          <perch:content id="cash_tabcontent" type="textarea" label="Cash Price Tab Content" editor="ckeditor" html="true" required="true" />
+        </div>
+        <div role="tabpanel" class="tab-pane<perch:if id="open_tab" value="pcp" match="eq"> active</perch:if>" id="pcp<perch:content id="perch_item_index" type="hidden" />">
+          <perch:content id="pcp_tabcontent" type="textarea" label="PCP Tab Content" editor="ckeditor" html="true" required="true" />
+        </div>
+        <div role="tabpanel" class="tab-pane<perch:if id="open_tab" value="hp" match="eq"> active</perch:if>" id="hp<perch:content id="perch_item_index" type="hidden" />">
+          <perch:content id="hp_tabcontent" type="textarea" label="HP Tab Content" editor="ckeditor" html="true" required="true" />
+        </div>
+        <div role="tabpanel" class="tab-pane<perch:if id="open_tab" value="lease" match="eq"> active</perch:if>" id="lease<perch:content id="perch_item_index" type="hidden" />">
+          <perch:content id="lease_tabcontent" type="textarea" label="Lease Tab Content" editor="ckeditor" html="true" required="true" />
+        </div>
+        
+
+        <div role="tabpanel" class="tab-pane<perch:if id="open_tab" value="contract_hire" match="eq"> active</perch:if>" id="contract_hire<perch:content id="perch_item_index" type="hidden" />">
+          <perch:content id="contract_hire" type="textarea" label="Contract Hire Tab Content" editor="ckeditor" html="true" required="true" />
+        </div>
+
+
+      </div>
+    </div>
+  </div><!--/.col-->
+</div>
+</perch:block>
+
+</perch:blocks>

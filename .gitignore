@@ -2,7 +2,7 @@ application/config/*
 application/.htacces
 application/logs/*
 
-public/*
+public/perch/config/*
 ssl/*
 
 *.sql

@@ -1,0 +1,12 @@
+
+<h3>Tags</h3>
+<ul>
+
+    <li><a href="archive.php?tag=buxton" rel="tag">Buxton</a></li>
+
+    <li><a href="archive.php?tag=daf-parts" rel="tag">DAF Parts</a></li>
+
+    <li><a href="archive.php?tag=trp-parts" rel="tag">TRP Parts</a></li>
+
+    <li><a href="archive.php?tag=truck-parts" rel="tag">Truck Parts</a></li>
+</ul>

@@ -1,0 +1,22 @@
+<perch:before>
+<!-- Wrapper for slides -->
+<div class="carousel-inner" role="listbox">
+</perch:before>
+  <div class="item<perch:if id="perch_item_index" match="eq" value="1"> active</perch:if>">
+    <a href="<perch:content id="link" type="text" label="Link" help="The URL that image links to" />">
+      <img src="<perch:content id="image" type="image" label="Image" />" class="img-responsive" alt="<perch:content id="slidephotoalt" type="text" label="Description" required="true" help="A description of the slide image. This field is required, it is also being used as ALT-text for a better Google ranking." />">
+    </a>
+  </div>
+<perch:after>
+</div>
+<!-- Controls -->
+<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+  <img src="/assets/img/arrow_left.png" alt="Previous" class="img-responsive">
+  <span class="sr-only">Previous</span>
+</a>
+<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+  <img src="/assets/img/arrow_right.png" alt="Next" class="img-responsive">
+  <span class="sr-only">Next</span>
+</a>
+</div>
+</perch:after>

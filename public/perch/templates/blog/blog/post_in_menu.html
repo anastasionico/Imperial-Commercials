@@ -1,0 +1,28 @@
+
+<perch:before>
+<ul class="hfeed listing post-in-menu"></perch:before>
+    <li class="hentry">
+        <span class="entry-published date"><perch:blog id="postDateTime" format="%d %b" /></span>
+        <span class="title">
+          <a href="<perch:blog id="postURL" />" rel="bookmark" class="entry-title"><perch:blog id="postTitle" /></a>
+        </span>
+        <div class="description entry-summary">
+        <perch:blog id="excerpt" type="textarea" textile="true" />
+        <a href="<perch:blog id="postURL" />" rel="bookmark" class="more">More</a>
+        </div>
+    </li>
+<perch:after>
+    </ul>
+    <perch:if exists="paging">
+        <div class="paging">
+            Page <perch:blog id="current_page" /> of <perch:blog id="number_of_pages" />
+            <perch:blog id="page_links" encode="false" />
+            <perch:if exists="not_first_page">
+                <a href="<perch:blog id="prev_url" encode="false" />">Previous</a>
+            </perch:if>
+            <perch:if exists="not_last_page">
+                <a href="<perch:blog id="next_url" encode="false" />">Next</a>
+            </perch:if>
+        </div>
+    </perch:if>
+</perch:after>

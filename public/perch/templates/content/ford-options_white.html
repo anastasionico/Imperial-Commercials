@@ -1,0 +1,15 @@
+<div class="tile tile-padded tile-mb ford-options">
+  <h1><perch:content id="header" type="text" label="Header" /></h1>
+  <div class="row">
+    <perch:repeater id="option-item" label="Option Item">
+    <div class="col-md-3 ford-option">
+      <a href="<perch:content id="link" type="text" label="Link" help="The URL that the image/button links to" />">
+        <img src="<perch:content id="image" type="image" label="Image" />" class="img-responsive">
+      </a>
+      <a href="<perch:content id="link" type="text" label="Link" help="The URL that the image/button links to" />" class="bottom">
+        <perch:content id="title" type="text" label="Title" />
+      </a>
+    </div>
+    </perch:repeater>
+  </div>
+</div><!--/.tile -->
