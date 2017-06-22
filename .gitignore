@@ -1,4 +1,7 @@
-application/*
+application/config/*
+application/.htacces
+application/logs/*
+
 public/*
 ssl/*
 
